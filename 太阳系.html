@@ -1,0 +1,54 @@
+<!doctype html>
+	<!--声明文档类型:html-->
+	<html lang="en">
+		<!--超文本标记语言  根目录节点标签 语言中文-->
+		<head>
+		<!--头部:给浏览器看的-->
+			<meta charset="UTF-8">
+			<!--字符编码:国际编码-->
+			<!--网页三要素  关键词 描述 标题 -->
+			<meta name="Keywords" content="关键词1，关键词2">
+			<!--关键词:提供给搜索引擎搜索网站使用-->
+			<meta name="Description" content="描述：对网页文档的大概的介绍">
+			<title>网页文档的标题-CC</title>
+			<style>
+			*{ margin:0px;padding:0px;line-height:25px;letter-spacing:1px;user-select:none}
+			a{text-decoration:none;}
+			ul,li{list-style-type:none;}
+			img{border:none;}
+			body{
+				background-color:black;
+			}
+			canvas{
+				/* position: fixed; */
+				/* display:block;
+				top:0;
+				right:0;
+				left:0;
+				bottom:0; */
+				width:620px;
+				height:620px;
+			
+				/* border:1px solid #ccc */
+			}
+			</style>
+			</head>
+			<body><!--身体 网页上可见的区域-->
+			<canvas></canvas>
+			<script>
+			let cv = document.querySelector('canvas')
+			let c = cv.getContext('2d')
+			c.strokeStyle = 'white'
+			for(let i = 0 ;i<8;i++){
+				c.beginPath();
+				c.arc(310,310,i*30,0,6.3,false)
+				c.stroke()
+			}
+			 new function Star(){
+				 this.rad = ''
+				 this.Xrad = ''
+				 this.cycle = ''
+			 }
+			</script>
+		</body>
+	</html>
